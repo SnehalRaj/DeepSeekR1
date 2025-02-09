@@ -1,6 +1,8 @@
 
 # DeepSeekR1-Zero
 
+![screenshot](DeepSeekR1.drawio.png)
+
 This repository implements DeepSeekR1-Zero’s algorithm using GRPO training on the GoEmotions dataset with chain-of-thought reasoning. In this demo, we fine-tune a causal language model (`distilgpt2`) so that it learns to output a chain-of-thought followed by a final answer in a prescribed format. The training leverages a custom reward function that gives a reward of 1.0 if the model’s answer (extracted from `<answer>...</answer>`) matches the ground truth emotion.
 
 Inspired by Karpathy’s minimalist and clear coding style, the repository is organized as follows:
